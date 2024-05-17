@@ -1,8 +1,11 @@
 # API_Individual_Biblioteca
-# POO-individual
-<h1 align="center">
-    <img src="ImagemInicio.png">
-</h1>
+# EndPoints
+<ul>
+	<li>GET = /livros/{id}
+	<li>POST = /livros
+	<li>PUT = /livros/{id}
+	<li>DELETE = /livros/{id}
+</ul>
 
 ## :detective:Índice
 
