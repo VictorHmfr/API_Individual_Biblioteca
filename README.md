@@ -1,10 +1,11 @@
 # API_Individual_Biblioteca
 # EndPoints
 <ul>
-	<li>GET = /livros/{id}
-	<li>POST = /livros
-	<li>PUT = /livros/{id}
-	<li>DELETE = /livros/{id}
+	<li>GET(Lista todos os livros e seus ids) = localhost:8080/livros
+	<li>GET(Busca livros do id específico) = localhost:8080/livros/{id}
+	<li>POST(Adiciona novos livros ao sistema) = localhost:8080/livros
+	<li>PUT(Atualiza as informações de um livro pelo id) = localhost:8080/livros/{id}
+	<li>DELETE(Deleta um livro pelo id) = localhost:8080/livros/{id}
 </ul>
 
 ## :detective:Índice

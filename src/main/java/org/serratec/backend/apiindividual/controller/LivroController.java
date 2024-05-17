@@ -1,5 +1,6 @@
 package org.serratec.backend.apiindividual.controller;
 
+import java.util.List;
 import java.util.Optional;
 
 import org.serratec.backend.apiindividual.model.Livro;
@@ -25,6 +26,13 @@ public class LivroController {
 
 	@Autowired
 	private LivroRepository livroRepository;
+
+	@GetMapping
+	private ResponseEntity<List<Livro>> listar() {
+
+		return ResponseEntity.ok(livroRepository.findAll());
+
+	}
 
 	@GetMapping("/{id}")
 	public ResponseEntity<Livro> buscar(@PathVariable Long id) {
