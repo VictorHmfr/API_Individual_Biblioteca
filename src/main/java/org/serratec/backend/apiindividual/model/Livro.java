@@ -17,18 +17,18 @@ public class Livro {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column
 	private Long id;
-	
+
 	@NotBlank(message = "Insira um título válido")
 	@Column
 	private String titulo;
-	
+
 	@Embedded
 	private InformacaoPublicacao informacaoPublicacao;
 
 	public Livro() {
-		
+
 	}
-	
+
 	public Livro(Long id, String titulo) {
 		super();
 		this.id = id;
@@ -55,7 +55,7 @@ public class Livro {
 	public int hashCode() {
 		return Objects.hash(id);
 	}
-	
+
 	public InformacaoPublicacao getInformacaoPublicacao() {
 		return informacaoPublicacao;
 	}
@@ -75,7 +75,5 @@ public class Livro {
 		Livro other = (Livro) obj;
 		return Objects.equals(id, other.id);
 	}
-	
-	
-	
+
 }

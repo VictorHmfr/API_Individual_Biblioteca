@@ -19,16 +19,16 @@ public class ControllerExceptionHandler extends ResponseEntityExceptionHandler {
 	@Override
 	protected ResponseEntity<Object> handleMethodArgumentNotValid(MethodArgumentNotValidException ex,
 			HttpHeaders headers, HttpStatusCode status, WebRequest request) {
-		
+
 		List<String> erros = new ArrayList<>();
-		for(FieldError error: ex.getBindingResult().getFieldErrors()) {
+		for (FieldError error : ex.getBindingResult().getFieldErrors()) {
 			erros.add(error.getField() + ": " + error.getDefaultMessage());
 		}
-		
+
 		ErroResposta erroResposta = new ErroResposta(status.value(),
 				"Existem Campos inválidos. Confira o preenchimento", LocalDateTime.now(), erros);
-		
+
 		return super.handleExceptionInternal(ex, erroResposta, headers, status, request);
 	}
-	
+
 }
