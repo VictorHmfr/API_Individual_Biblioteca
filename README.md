@@ -25,6 +25,7 @@ Um sistema de uma biblioteca para procurar, inserir, atualizar e deletar informa
 - [JavaSE17](https://www.oracle.com/br/java/technologies/downloads/#jdk17-windows)
 - [SpringToolSuite4](https://spring.io/tools)
 - [GitHub](https://github.com/)
+- [Postman](https://www.postman.com/)
 
 </div>
 ## Autor
